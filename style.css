@@ -1,1 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #030014;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 380px;
+    margin: 0 auto 30px;
+    line-height: 1.58;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.09);
+    box-shadow: 0 9px 23px rgba(0, 0, 0, 0.19);
+}
+
+.social-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.45rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 18px;
+    }
+
+    .social-icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .social-icon svg {
+        width: 27px;
+        height: 27px;
+    }
+}
